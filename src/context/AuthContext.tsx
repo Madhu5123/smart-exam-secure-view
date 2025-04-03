@@ -7,7 +7,7 @@ import {
   signInWithEmailAndPassword, 
   signOut 
 } from "firebase/auth";
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "@/lib/firebase";
 import { useToast } from "@/components/ui/use-toast";
 
